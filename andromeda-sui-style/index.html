@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andromeda — Custom AI solutions built around your business</title>
+  <meta name="description" content="Andromeda designs bespoke, high-end AI automation systems tailored to how your business actually works — no templates, no one-size-fits-all automation.">
+  <meta name="color-scheme" content="dark light">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/cabinet-grotesk-500.woff2" crossorigin>
+  <link rel="stylesheet" href="assets/styles.css?v=43">
+</head>
+<body>
+  <div class="preloader" data-preloader aria-hidden="true">
+    <div class="preloader__logo">
+      <img class="preloader__mark" src="assets/mark-light.png" alt="" width="200" height="200" fetchpriority="high" decoding="async">
+      <img class="preloader__word" src="assets/wordmark-light.png" alt="" width="620" height="90" fetchpriority="high" decoding="async">
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+    <symbol id="i-mark" viewBox="0 0 100 100"><path fill-rule="evenodd" d="M50 3 Q58 44 98 50 Q56 58 50 98 Q42 56 2 50 Q44 42 50 3 Z M50 34 Q52.4 48.4 66 50 Q51.4 52.6 50 66 Q47.6 51.6 34 50 Q48.6 47.4 50 34 Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-bracket" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" d="M2 14V6h8"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M5 5l14 14M19 5L5 19"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M3 7h18M3 12h18M3 17h18"/></symbol>
+    <!-- isometric line-art diagrams for "What we build" -->
+    <symbol id="d-data" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M60 16 104 40 60 64 16 40Z"/><path d="M16 40v28l44 24 44-24V40" opacity=".55"/><path d="M60 64v28" opacity=".55"/><path class="d-accent" d="M52 36l6 8 14-14" stroke-width="2"/></g></symbol>
+    <symbol id="d-assistant" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 30h72v44H52L34 92V74H24Z"/><path class="d-accent" d="M60 40l4 10 10 4-10 4-4 10-4-10-10-4 10-4Z" stroke-width="2"/></g></symbol>
+    <symbol id="d-flow" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="26" cy="34" r="9"/><circle cx="94" cy="34" r="9"/><circle cx="60" cy="90" r="9"/><path class="d-accent" d="M35 34h50M88 42 66 82M32 42l22 40" stroke-width="1.8"/></g></symbol>
+    <symbol id="d-intel" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 96h80M28 96V64M48 96V48M68 96V72M88 96V40"/><path class="d-accent" d="M24 74 46 52l20 12 26-32" stroke-width="2"/></g></symbol>
+    <symbol id="d-integrate" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="20" y="20" width="34" height="34"/><rect x="66" y="66" width="34" height="34"/><path class="d-accent" d="M54 37h14a12 12 0 0 1 12 12v17" stroke-width="2"/><path d="M37 54v6M83 60v6" opacity=".6"/></g></symbol>
+    <symbol id="d-globe" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="60" cy="60" r="42"/><ellipse cx="60" cy="60" rx="18" ry="42"/><path d="M18 60h84M26 38h68M26 82h68"/><path class="d-accent" d="M60 18v84" stroke-width="1.8"/></g></symbol>
+    <!-- branching automation tree: root -> layers -> leaves -->
+    <symbol id="d-tree" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-linejoin="miter" stroke-linecap="square"><path d="M60 22V34M32 34H88M32 34V46M88 34V46"/><path d="M32 56V68M12 68H52M18 68V80M46 68V80"/><path d="M88 56V68M68 68H108M74 68V80M102 68V80"/><path class="d-accent" d="M18 90V104M102 90V104"/><rect x="54" y="12" width="12" height="10"/><rect x="26" y="46" width="12" height="10"/><rect x="82" y="46" width="12" height="10"/><rect x="12" y="80" width="12" height="10"/><rect x="40" y="80" width="12" height="10"/><rect x="68" y="80" width="12" height="10"/><rect x="96" y="80" width="12" height="10"/><rect class="d-accent" x="12" y="104" width="12" height="10"/><rect class="d-accent" x="96" y="104" width="12" height="10"/></g></symbol>
+  </svg>
+
+  <div class="promo" data-promo>
+    <div class="promo__track">
+      <span>Now booking Q4 discovery calls</span><span aria-hidden="true">·</span>
+      <span>Now booking Q4 discovery calls</span><span aria-hidden="true">·</span>
+      <span>Now booking Q4 discovery calls</span><span aria-hidden="true">·</span>
+      <span>Now booking Q4 discovery calls</span><span aria-hidden="true">·</span>
+    </div>
+    <button class="promo__close" type="button" data-promo-close aria-label="Dismiss announcement">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+  </div>
+
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="brand" href="#main" aria-label="Andromeda home">
+        <img class="brand__lockup" src="assets/logo-light.png?v=2" alt="Andromeda" width="795" height="130" fetchpriority="high" decoding="async">
+      </a>
+      <div class="site-header__actions">
+        <a class="btn-cta" href="#contact" data-stagger aria-label="Book a call">
+          <span class="btn-cta__label" aria-hidden="true">Book a call</span>
+          <span class="btn-cta__sq" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>
+        </a>
+        <button class="menu-toggle" type="button" data-menu-open aria-expanded="false" aria-controls="overlay-nav">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-menu"/></svg><span class="sr-only">Open menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="overlay-nav" id="overlay-nav" data-overlay aria-label="Primary" hidden>
+    <button class="overlay-nav__close" type="button" data-menu-close aria-label="Close menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+    <ul>
+      <li><a href="#difference" data-menu-link><span class="overlay-nav__idx">01</span>The bespoke difference</a></li>
+      <li><a href="#process" data-menu-link><span class="overlay-nav__idx">02</span>How we work</a></li>
+      <li><a href="#build" data-menu-link><span class="overlay-nav__idx">03</span>What we build</a></li>
+      <li><a href="#about" data-menu-link><span class="overlay-nav__idx">04</span>About us</a></li>
+      <li><a href="#technology" data-menu-link><span class="overlay-nav__idx">05</span>Technology</a></li>
+      <li><a href="#commitment" data-menu-link><span class="overlay-nav__idx">06</span>Our commitment</a></li>
+      <li><a href="#contact" data-menu-link><span class="overlay-nav__idx">07</span>Contact us</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-h">
+      <img class="hero__orb hero__spin" src="assets/hero-mark2.png" alt="" width="585" height="413" fetchpriority="high" decoding="async">
+      <div class="wrap hero__inner">
+        <p class="kicker kicker--light"><span>Bespoke AI automation</span></p>
+        <h1 id="hero-h" class="display display--xl">Custom AI solutions built around your business.</h1>
+        <p class="hero__sub">We don't believe in one-size-fits-all automation.</p>
+        <div class="cta-row">
+          <a class="btn-sq" href="#difference"><span class="btn-sq__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>Learn more</a>
+          <a class="btn-line" href="#contact">Book a discovery call</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 — THE BESPOKE DIFFERENCE -->
+    <section id="difference" class="band band--paper" aria-labelledby="difference-h">
+      <canvas class="pixel-transition" data-pixel-transition aria-hidden="true"></canvas>
+      <div class="wrap">
+        <p class="kicker"><span>The bespoke difference</span></p>
+        <h2 id="difference-h" class="display display--reveal">
+          <span class="line"><span>Why cookie-cutter</span></span>
+          <span class="line"><span>solutions don't work.</span></span>
+        </h2>
+        <p class="statement statement--tight">Every company operates differently&mdash;your processes, your team, your data. Off-the-shelf tools force you to adapt to their limits. <em>We do the opposite.</em></p>
+
+        <div class="rule-lead" aria-hidden="true"></div>
+
+        <div class="accordion" data-accordion>
+          <div class="acc-item is-open">
+            <h3 class="acc-head">
+              <button type="button" aria-expanded="true" aria-controls="acc-p1">
+                <span class="acc-idx">/ 01</span>
+                <span class="acc-title">Understand, don't template</span>
+                <span class="acc-toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acc-panel" id="acc-p1" role="region" aria-label="Understand, don't template">
+              <div class="acc-panel__inner">
+                <p>We start by understanding your specific workflows, not forcing you into templates. Every engagement begins with how your team actually works today.</p>
+                <ul class="tags"><li>Workflow discovery</li><li>No templates</li><li>Process mapping</li></ul>
+              </div>
+            </div>
+          </div>
+          <div class="acc-item">
+            <h3 class="acc-head">
+              <button type="button" aria-expanded="false" aria-controls="acc-p2">
+                <span class="acc-idx">/ 02</span>
+                <span class="acc-title">Integrate with what exists</span>
+                <span class="acc-toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acc-panel" id="acc-p2" role="region" aria-label="Integrate with what exists">
+              <div class="acc-panel__inner">
+                <p>We build solutions that integrate seamlessly with your existing systems&mdash;legacy or modern&mdash;so nothing your team relies on has to be replaced.</p>
+                <ul class="tags"><li>Existing systems</li><li>APIs &amp; webhooks</li><li>No rip-and-replace</li></ul>
+              </div>
+            </div>
+          </div>
+          <div class="acc-item">
+            <h3 class="acc-head">
+              <button type="button" aria-expanded="false" aria-controls="acc-p3">
+                <span class="acc-idx">/ 03</span>
+                <span class="acc-title">Target the real bottlenecks</span>
+                <span class="acc-toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acc-panel" id="acc-p3" role="region" aria-label="Target the real bottlenecks">
+              <div class="acc-panel__inner">
+                <p>We identify the bottlenecks that are actually costing you time and money, and automate those first&mdash;not whatever a template happens to cover.</p>
+                <ul class="tags"><li>Impact mapping</li><li>Time &amp; cost audit</li><li>Prioritised rollout</li></ul>
+              </div>
+            </div>
+          </div>
+          <div class="acc-item">
+            <h3 class="acc-head">
+              <button type="button" aria-expanded="false" aria-controls="acc-p4">
+                <span class="acc-idx">/ 04</span>
+                <span class="acc-title">Built for your team</span>
+                <span class="acc-toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acc-panel" id="acc-p4" role="region" aria-label="Built for your team">
+              <div class="acc-panel__inner">
+                <p>We create automations that feel like they were designed for your team&mdash;because they were. Interfaces match how people already work.</p>
+                <ul class="tags"><li>Bespoke interfaces</li><li>Team training</li><li>Ongoing support</li></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- tech marquee -->
+    <div class="marquee" aria-label="Tools we work with">
+      <div class="marquee__track">
+        <span>GPT-4</span><span>Claude</span><span>Gemini</span><span>Open-source models</span><span>Zapier</span><span>Make</span><span>n8n</span><span>Python</span><span>JavaScript</span><span>APIs</span><span>Webhooks</span><span>Legacy systems</span><span>Modern SaaS</span>
+        <span aria-hidden="true">GPT-4</span><span aria-hidden="true">Claude</span><span aria-hidden="true">Gemini</span><span aria-hidden="true">Open-source models</span><span aria-hidden="true">Zapier</span><span aria-hidden="true">Make</span><span aria-hidden="true">n8n</span><span aria-hidden="true">Python</span><span aria-hidden="true">JavaScript</span><span aria-hidden="true">APIs</span><span aria-hidden="true">Webhooks</span><span aria-hidden="true">Legacy systems</span><span aria-hidden="true">Modern SaaS</span>
+      </div>
+    </div>
+
+    <!-- 02 — HOW WE WORK -->
+    <section id="process" class="band band--grape" aria-labelledby="process-h">
+      <div class="wrap">
+        <p class="kicker kicker--light"><span>02 / How we work</span></p>
+        <h2 id="process-h" class="display">From discovery to deployment: your custom journey</h2>
+        <ol class="get-grid">
+          <li class="get-card get-card--lead">
+            <span class="get-idx" aria-hidden="true">/ 01</span>
+            <span class="get-icon" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#d-globe"/></svg></span>
+            <div class="get-visual" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#d-tree"/></svg></div>
+            <div class="get-body">
+              <h3>Discovery &amp; mapping</h3>
+              <p>We immerse ourselves in your business. We shadow your team, map every process, and identify exactly where AI and automation can make the biggest impact for you.</p>
+            </div>
+          </li>
+          <li class="get-card">
+            <span class="get-idx" aria-hidden="true">/ 02</span>
+            <span class="get-icon" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#d-data"/></svg></span>
+            <div class="get-body">
+              <h3>Custom solution design</h3>
+              <p>No templates. No generic workflows. We architect a solution specifically for your needs, choosing the right combination of tools, AI models, and integrations.</p>
+            </div>
+          </li>
+          <li class="get-card">
+            <span class="get-idx" aria-hidden="true">/ 03</span>
+            <span class="get-icon" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#d-flow"/></svg></span>
+            <div class="get-body">
+              <h3>Bespoke development</h3>
+              <p>Our developers build your automation from the ground up, writing custom code when needed, training AI models on your data, and creating interfaces that match how your team actually works.</p>
+            </div>
+          </li>
+          <li class="get-card get-card--wide">
+            <span class="get-idx" aria-hidden="true">/ 04</span>
+            <span class="get-icon" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#d-assistant"/></svg></span>
+            <div class="get-body">
+              <h3>Personalized support</h3>
+              <p>We don't just hand you a system and disappear. We train your team on your specific solution, create documentation for your processes, and provide ongoing support as your needs evolve.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- statement band -->
+    <section class="band band--paper statement-band" aria-label="Solutions as unique as your business">
+      <div class="wrap">
+        <p class="kicker"><span>What we deliver</span></p>
+        <p class="statement-band__headline">Solutions as unique as your business.</p>
+      </div>
+    </section>
+
+    <!-- 03 — WHAT WE BUILD -->
+    <section id="build" class="band band--ink band--img band--img-build" aria-labelledby="build-h">
+      <div class="wrap">
+        <p class="kicker kicker--light"><span>03 / What we build</span></p>
+        <h2 id="build-h" class="display">The stack we build for you</h2>
+        <div class="carousel" data-carousel>
+          <div class="carousel__viewport">
+            <ul class="carousel__track" data-carousel-track>
+              <li class="stack__card carousel__card">
+                <span class="stack__idx" aria-hidden="true">01</span>
+                <svg class="stack__art" viewBox="0 0 120 120" aria-hidden="true"><use href="#d-data"/></svg>
+                <h3>Intelligent data processing</h3>
+                <p>Not just OCR&mdash;we build systems that understand your document formats, extract the data you need, and route it exactly where you want it to go.</p>
+              </li>
+              <li class="stack__card carousel__card">
+                <span class="stack__idx" aria-hidden="true">02</span>
+                <svg class="stack__art" viewBox="0 0 120 120" aria-hidden="true"><use href="#d-assistant"/></svg>
+                <h3>Custom AI assistants</h3>
+                <p>Trained on your knowledge base, familiar with your products and services, speaking in your brand voice&mdash;not a generic chatbot from a template.</p>
+              </li>
+              <li class="stack__card carousel__card">
+                <span class="stack__idx" aria-hidden="true">03</span>
+                <svg class="stack__art" viewBox="0 0 120 120" aria-hidden="true"><use href="#d-flow"/></svg>
+                <h3>Workflow automation</h3>
+                <p>We map your specific processes&mdash;from lead capture to fulfillment, and automate the repetitive steps while keeping your team in control of what matters.</p>
+              </li>
+              <li class="stack__card carousel__card">
+                <span class="stack__idx" aria-hidden="true">04</span>
+                <svg class="stack__art" viewBox="0 0 120 120" aria-hidden="true"><use href="#d-intel"/></svg>
+                <h3>Data intelligence</h3>
+                <p>Transform your data from scattered spreadsheets and systems into actionable insights, automated reports, and predictive analytics tailored to your KPIs.</p>
+              </li>
+              <li class="stack__card carousel__card">
+                <span class="stack__idx" aria-hidden="true">05</span>
+                <svg class="stack__art" viewBox="0 0 120 120" aria-hidden="true"><use href="#d-integrate"/></svg>
+                <h3>System integration</h3>
+                <p>Connect your tech stack&mdash;no matter how custom or legacy&mdash;so data flows seamlessly between every tool your team uses.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="carousel__controls">
+            <button class="carousel__arrow carousel__arrow--prev" type="button" data-carousel-prev aria-label="Previous solution">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </button>
+            <div class="carousel__dots" data-carousel-dots></div>
+            <button class="carousel__arrow carousel__arrow--next" type="button" data-carousel-next aria-label="Next solution">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 — ABOUT -->
+    <section id="about" class="band band--paper" aria-labelledby="about-h">
+      <div class="wrap">
+        <p class="kicker"><span>04 / About us</span></p>
+        <h2 id="about-h" class="display">Global expertise, personal service</h2>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="statement statement--tight">Based between Gibraltar and the UK, we bring together a team of specialists who are passionate about solving complex operational challenges.</p>
+            <p class="prose">We build custom automation solutions for businesses across Europe, North America, Asia, and beyond. Time zones don't limit us&mdash;we work flexibly to ensure seamless collaboration wherever you're located.</p>
+          </div>
+          <div class="about-visual">
+            <img class="about-map" src="assets/about-map.svg?v=8" width="900" height="440" loading="lazy" decoding="async"
+                 alt="Stylised world map — pulsing points across the Americas, Europe, Africa, Asia and Australia mark where Andromeda works, linked by arcs.">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 — TECHNOLOGY -->
+    <section id="technology" class="band band--ink" aria-labelledby="technology-h">
+      <div class="wrap">
+        <p class="kicker kicker--light"><span>05 / Our technology approach</span></p>
+        <h2 id="technology-h" class="display">We choose the right tools for your needs</h2>
+        <blockquote class="pull">We're not loyal to any single platform or AI model. We're loyal to what works best for you.</blockquote>
+        <div class="cols">
+          <div class="col">
+            <h3 class="col__title">AI models</h3>
+            <p class="col__lead">Selected on your use case, budget, and data requirements.</p>
+            <ul class="ticks">
+              <li><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#i-bracket"/></svg>GPT-4</li>
+              <li><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#i-bracket"/></svg>Claude</li>
+              <li><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#i-bracket"/></svg>Gemini</li>
+              <li><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#i-bracket"/></svg>Open-source alternatives</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3 class="col__title">Automation platforms</h3>
+            <p class="col__lead">Whatever fits your complexity level.</p>
+            <ul class="ticks">
+              <li><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#i-bracket"/></svg>Zapier</li>
+              <li><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#i-bracket"/></svg>Make</li>
+              <li><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#i-bracket"/></svg>n8n</li>
+              <li><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#i-bracket"/></svg>Custom-built solutions</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3 class="col__title">Custom development</h3>
+            <p class="col__lead">We code what can't be configured.</p>
+            <ul class="ticks">
+              <li><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#i-bracket"/></svg>Python</li>
+              <li><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#i-bracket"/></svg>JavaScript</li>
+              <li><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#i-bracket"/></svg>APIs</li>
+              <li><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#i-bracket"/></svg>Webhooks</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3 class="col__title">Your existing stack</h3>
+            <p class="col__lead">We integrate with what you already use.</p>
+            <ul class="ticks">
+              <li><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#i-bracket"/></svg>Legacy systems</li>
+              <li><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#i-bracket"/></svg>Cutting-edge SaaS</li>
+            </ul>
+          </div>
+        </div>
+        <a class="btn-sq btn-sq--ghost" href="#contact"><span class="btn-sq__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>Discuss your stack</a>
+      </div>
+    </section>
+
+    <!-- 06 — COMMITMENT -->
+    <section id="commitment" class="band band--ink" aria-labelledby="commitment-h">
+      <div class="wrap">
+        <p class="kicker kicker--light"><span>06 / Our commitment</span></p>
+        <h2 id="commitment-h" class="display">What you can expect from us</h2>
+        <ul class="expect" data-expect>
+          <li class="expect-row is-active">
+            <span class="expect-row__idx" aria-hidden="true">01</span>
+            <h3 class="expect-row__word">Transparency</h3>
+            <p class="expect-row__desc">We show you exactly what we're building, how it works, and what it will cost &mdash; no black boxes, no surprises.</p>
+          </li>
+          <li class="expect-row">
+            <span class="expect-row__idx" aria-hidden="true">02</span>
+            <h3 class="expect-row__word">Evolution</h3>
+            <p class="expect-row__desc">As your business changes, your automation should too &mdash; we build solutions that can be updated, expanded, and refined over time.</p>
+          </li>
+          <li class="expect-row">
+            <span class="expect-row__idx" aria-hidden="true">03</span>
+            <h3 class="expect-row__word">Partnership</h3>
+            <p class="expect-row__desc">Your success is our metric. We're not interested in selling you unnecessary features or complex systems you don't need.</p>
+          </li>
+          <li class="expect-row">
+            <span class="expect-row__idx" aria-hidden="true">04</span>
+            <h3 class="expect-row__word">Knowledge</h3>
+            <p class="expect-row__desc">We empower your team to understand and manage the systems we build. You'll never be dependent on us for simple updates.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 07 — CONTACT -->
+    <section id="contact" class="hero hero--contact band--img band--img-contact" aria-labelledby="contact-h">
+      <div class="wrap hero__inner">
+        <p class="kicker kicker--light"><span>07 / Contact us</span></p>
+        <h2 id="contact-h" class="display">Schedule a discovery call</h2>
+        <p class="hero__sub hero__sub--sm">Your business is unique. Your automation should be too. No generic demos or pressure, just an honest conversation about your business.</p>
+        <form class="form" action="#" method="post" novalidate>
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="cf-email">Email</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+          </div>
+          <button class="btn-sq btn-sq--white" type="submit"><span class="btn-sq__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>Submit</button>
+          <p class="form__note" data-form-status role="status" aria-live="polite">Design concept &mdash; this form isn't wired to a backend yet.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-cell footer-nav-cell">
+        <div class="footer-nav-cols">
+          <nav class="foot-col" aria-label="Solutions">
+            <h2>Solutions</h2>
+            <a href="#build">Intelligent data processing</a>
+            <a href="#build">Custom AI assistants</a>
+            <a href="#build">Workflow automation</a>
+            <a href="#build">Data intelligence</a>
+            <a href="#build">System integration</a>
+          </nav>
+          <nav class="foot-col" aria-label="Company">
+            <h2>Company</h2>
+            <a href="#about">About us</a>
+            <a href="#commitment">Our commitment</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <nav class="foot-col" aria-label="Approach">
+          <h2>Approach</h2>
+          <a href="#difference">The bespoke difference</a>
+          <a href="#process">How we work</a>
+          <a href="#technology">Technology</a>
+        </nav>
+      </div>
+
+      <div class="footer-cell footer-action-cell">
+        <p class="foot-col__label">Andromeda in action</p>
+        <span class="footer-action__tile" aria-hidden="true"><img src="assets/mark-light.png" alt="" width="200" height="200" loading="lazy" decoding="async"></span>
+        <ul class="footer-action__list" data-foot-cycle aria-hidden="true">
+          <li>Intelligent data processing</li>
+          <li class="is-active">Custom AI assistants</li>
+          <li>Workflow automation</li>
+          <li>Data intelligence</li>
+          <li>System integration</li>
+        </ul>
+        <div class="footer-action__legal">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms of service</a>
+          <a href="#technology">Security</a>
+        </div>
+      </div>
+
+      <div class="footer-cell footer-cta-cell">
+        <p class="kicker"><span>Get started with us</span></p>
+        <p class="footer-cta__title">Automation built around your business.</p>
+        <a class="btn-sq btn-sq--ink" href="#contact"><span class="btn-sq__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>Get started</a>
+      </div>
+
+      <div class="footer-cell footer-brand-cell">
+        <img class="footer-brand__logo" src="assets/logo-light-tight.png" alt="Andromeda" width="1100" height="182" loading="lazy" decoding="async">
+        <div class="footer-brand__meta">
+          <span>&copy; 2026 Andromeda AI Ltd. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js?v=25" defer></script>
+</body>
+</html>
